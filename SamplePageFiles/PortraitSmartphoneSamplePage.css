@@ -44,7 +44,7 @@
 
   .methodDivClass p {
     text-align: justify;
-    font-size: 1.6vw;
+    font-size: 3.5vw;
   }
 
   .resultDivClass {
@@ -61,7 +61,7 @@
 
   .resultDivClass p {
     text-align: justify;
-    font-size: 1.6vw;
+    font-size: 3.75vw;
   }
 
   .negotiationDivClass {
@@ -78,7 +78,7 @@
 
   .negotiationDivClass p {
     text-align: justify;
-    font-size: 1.6vw;
+    font-size: 4vw;
   }
 
   .appendicesDivClass {
@@ -95,6 +95,6 @@
 
   .appendicesDivClass p {
     text-align: left;
-    font-size: 1.6vw;
+    font-size: 4.2vw;
   }
 }
