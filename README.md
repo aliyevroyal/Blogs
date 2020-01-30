@@ -1,6 +1,14 @@
-# Projects, Blogs and Articles
+# Projects, Blogs
 
-This is a place I will write about my open source projects. You can read my articles/blogs or find all the details of my projects. If you have any questions or suggestions in your mind, please do not hesitate and write to me, thanks.
+This is a place I will write about my open source projects. You can read my blogs or find all the details of my projects. If you have any questions or suggestions in your mind, please do not hesitate and write to me, thanks.
+
+## Authors
+
+* Royal Aliyev
+
+## Contact
+
+royal.alyv@gmail.com
 
 ## Built with
 
@@ -11,10 +19,6 @@ This is a place I will write about my open source projects. You can read my arti
 * [jQuery] - JavaScript Frontend Framework for www.thealiyev.com
 * [Angular] - JavaScript Frontend Framework for www.thealiyev.com
 * [BootStrap] - CSS Frontend Framework for www.thealiyev.com
-
-## Authors
-
-* Royal Aliyev
 
 ## Last Update
 
