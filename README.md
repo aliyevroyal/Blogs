@@ -22,8 +22,8 @@ This is a place I will write about my open source projects. You can read my arti
 
 ## Version
 
-* v3.1.0
+v1.0.0
 
 ## Acknowledgments
 
-“I wish to express my deepest gratitude to my sister, Khayala. She kept me going on and this work would not have been possible without her.
+I wish to express my deepest gratitude to my sister, Khayala. She kept me going on and all these works would not have been possible without her support.
