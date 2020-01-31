@@ -31,3 +31,5 @@ royal.alyv@gmail.com
 ## Acknowledgments
 
 I wish to express my deepest gratitude to my sister, Khayala. She kept me going on and all these works would not have been possible without her support.
+
+![alt text](Sample/WebPageFiles/Sample.png)
