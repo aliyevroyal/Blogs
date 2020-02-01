@@ -27,10 +27,6 @@
     height: auto;
   }
 
-  .introductionDivClass h2 {
-    text-align: center;
-  }
-
   .introductionDivClass p {
     text-align: justify;
     font-size: 1.6vw;
@@ -42,71 +38,27 @@
     margin-right: auto;
   }
 
-  .methodDivClass {
+  .endingDivClass {
     position: relative;
     top: 0vh;
     left: 4vw;
     width: 92vw;
-    height: auto;
+    height: 7.5vh;
   }
 
-  .methodDivClass h2 {
-    text-align: center;
-  }
-
-  .methodDivClass p {
-    text-align: justify;
-    font-size: 1.6vw;
-  }
-
-  .resultDivClass {
-    position: relative;
+  .endingPreviousButtonClass {
     top: 0vh;
     left: 4vw;
-    width: 92vw;
-    height: auto;
+    width: 11vw;
+    border-radius: 2.5vh;
+    font-size: 3vh;
   }
 
-  .resultDivClass h2 {
-    text-align: center;
-  }
-
-  .resultDivClass p {
-    text-align: justify;
-    font-size: 1.6vw;
-  }
-
-  .negotiationDivClass {
-    position: relative;
+  .endingNextButtonClass {
     top: 0vh;
-    left: 4vw;
-    width: 92vw;
-    height: auto;
-  }
-
-  .negotiationDivClass h2 {
-    text-align: center;
-  }
-
-  .negotiationDivClass p {
-    text-align: justify;
-    font-size: 1.6vw;
-  }
-
-  .appendicesDivClass {
-    position: relative;
-    top: 0vh;
-    left: 4vw;
-    width: 92vw;
-    height: auto;
-  }
-
-  .appendicesDivClass h2 {
-    text-align: center;
-  }
-
-  .appendicesDivClass p {
-    text-align: left;
-    font-size: 1.6vw;
+    right: 4vw;
+    width: 11vw;
+    border-radius: 2.5vh;
+    font-size: 3vh;
   }
 }
