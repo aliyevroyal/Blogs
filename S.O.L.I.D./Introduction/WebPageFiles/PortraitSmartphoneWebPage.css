@@ -10,7 +10,11 @@
   }
 
   .titlePClass {
-    font-size: 7.5vw;
+    position: relative;
+    top: 0vh;
+    left: 4.5vw;
+    width: 91vw;
+    font-size: 6vw;
     text-align: center;
     font-weight: bold;
   }
