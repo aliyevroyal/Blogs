@@ -9,8 +9,10 @@
     height: auto;
   }
 
-  .titleDivClass h1 {
+  .titlePClass {
+    font-size: 7.5vw;
     text-align: center;
+    font-weight: bold;
   }
 
   .introductionDivClass {
@@ -28,6 +30,12 @@
   .introductionDivClass p {
     text-align: justify;
     font-size: 4.75vw;
+  }
+
+  .SOLIDTreeImgClass {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .methodDivClass {

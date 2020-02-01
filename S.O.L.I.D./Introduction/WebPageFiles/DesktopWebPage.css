@@ -9,8 +9,10 @@
     height: auto;
   }
 
-  .titleDivClass h1 {
+  .titlePClass {
+    font-size: 3.2vw;
     text-align: center;
+    font-weight: bold;
   }
 
   .introductionDivClass {
