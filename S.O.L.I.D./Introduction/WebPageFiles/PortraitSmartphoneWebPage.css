@@ -40,14 +40,14 @@
 
   .endingDivClass {
     position: relative;
-    top: 0vh;
+    top: 2.5vh;
     left: 4.5vw;
     width: 91vw;
     height: 12.5vh;
   }
 
   .endingPreviousButtonClass {
-    top: 0vh;
+    top: 2.5vh;
     left: 4vw;
     width: 32vw;
     border-radius: 2.5vh;
@@ -55,7 +55,7 @@
   }
 
   .endingNextButtonClass {
-    top: 0vh;
+    top: 2.5vh;
     right: 4vw;
     width: 32vw;
     border-radius: 2.5vh;
