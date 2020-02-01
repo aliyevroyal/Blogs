@@ -43,11 +43,11 @@
     top: 2.5vh;
     left: 4.5vw;
     width: 91vw;
-    height: 12.5vh;
+    height: 10vh;
   }
 
   .endingPreviousButtonClass {
-    top: 2.5vh;
+    top: 0vh;
     left: 4vw;
     width: 32vw;
     border-radius: 2.5vh;
@@ -55,7 +55,7 @@
   }
 
   .endingNextButtonClass {
-    top: 2.5vh;
+    top: 0vh;
     right: 4vw;
     width: 32vw;
     border-radius: 2.5vh;
