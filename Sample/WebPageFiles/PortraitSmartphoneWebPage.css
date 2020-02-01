@@ -30,6 +30,12 @@
     font-size: 4.75vw;
   }
 
+  .introductionImageClass {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .methodDivClass {
     position: relative;
     top: 0vh;
@@ -96,5 +102,29 @@
   .appendicesDivClass p {
     text-align: left;
     font-size: 4.75vw;
+  }
+
+  .endingDivClass {
+    position: relative;
+    top: 2.5vh;
+    left: 4.5vw;
+    width: 91vw;
+    height: 10vh;
+  }
+
+  .endingPreviousButtonClass {
+    top: 0vh;
+    left: 4vw;
+    width: 32vw;
+    border-radius: 2.5vh;
+    font-size: 3vh;
+  }
+
+  .endingNextButtonClass {
+    top: 0vh;
+    right: 4vw;
+    width: 32vw;
+    border-radius: 2.5vh;
+    font-size: 3vh;
   }
 }
