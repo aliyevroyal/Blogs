@@ -61,9 +61,17 @@
     height: 30vh;
   }
 
-  .InitializationCodeClass {
-    text-align: none;
-    font-size: 8px;
+  .codeSnippetClass {
+    position: relative;
+    top: 0vh;
+    left: 0vw;
+    width: 100vw;
+    height: auto;
+  }
+
+  .codeSnippetClass p{
+    text-align: left;
+    font-size: 3vw;
     background-color: #404354;
     color: #EEEDEE;
   }

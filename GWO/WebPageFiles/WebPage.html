@@ -54,27 +54,30 @@
       <h2>Hunting(Initialization)</h2>
       <p>
         &emsp; We initialize the number of population and define alpha, beta, delta(trio) and omega(others) wolves in swarm.
+        More details in the code snippet below.
       </p>
-      <p class="InitializationCodeClass">
-        &emsp;//Initialization Starts Here<br/>
-        &emsp;System.out.println("Gray Wolf Initialization Starts...");<br/>
-        &emsp;double a;<br/>
-        &emsp;double r1, r2;<br/>
-        &emsp;double A1, A2, A3;<br/>
-        &emsp;double C1, C2, C3;<br/>
-        &emsp;double Dalpha, Dbeta, Ddelta;<br/>
-        &emsp;double Xalpha, Xbeta, Xdelta;<br/>
-        &emsp;double X, X1, X2, X3;<br/>
-        &emsp;int population = 30, dimension = 100;<br/>
-        &emsp;double min = -100.0, max = 100.0;<br/>
-        &emsp;int iteration = 500;<br/><br/>
+    </div>
+    <div class="codeSnippetClass">
+      <p>
+        &emsp;&emsp;&emsp;//Initialization Starts Here<br />
+        &emsp;&emsp;&emsp;System.out.println("Gray Wolf Initialization Starts...");<br />
+        &emsp;&emsp;&emsp;double a;<br />
+        &emsp;&emsp;&emsp;double r1, r2;<br />
+        &emsp;&emsp;&emsp;double A1, A2, A3;<br />
+        &emsp;&emsp;&emsp;double C1, C2, C3;<br />
+        &emsp;&emsp;&emsp;double Dalpha, Dbeta, Ddelta;<br />
+        &emsp;&emsp;&emsp;double Xalpha, Xbeta, Xdelta;<br />
+        &emsp;&emsp;&emsp;double X, X1, X2, X3;<br />
+        &emsp;&emsp;&emsp;int population = 30, dimension = 100;<br />
+        &emsp;&emsp;&emsp;double min = -100.0, max = 100.0;<br />
+        &emsp;&emsp;&emsp;int iteration = 500;<br /><br />
 
-        &emsp;//Create Random populationxdimension Optimization Matrix <br/>
-        &emsp;ArrayList<ArrayList<Double>> optimizationMatrix = main.createOptimizationMatrix(population, dimension, min, max);<br/>
-        &emsp;//Find Fitness values of population by Sphere Benchmark function<br/>
-        &emsp;ArrayList<Double> fitnessValues = main.findFitnessValues(optimizationMatrix);<br/>
-        &emsp;//Find 3 best solutions/trio(alpha, beta and delta wolves)<br/>
-        &emsp;ArrayList<Double> trio = main.findTrio(fitnessValues);<br/>
+        &emsp;&emsp;&emsp;//Create Random population * dimension Optimization Matrix <br />
+        &emsp;&emsp;&emsp;CreateOptimizationMatrix(population, dimension, min, max);<br />
+        &emsp;&emsp;&emsp;//Find Fitness values of population by Sphere Benchmark function<br />
+        &emsp;&emsp;&emsp;FindFitnessValues(optimizationMatrix);<br />
+        &emsp;&emsp;&emsp;//Find 3 best solutions/trio(alpha, beta and delta wolves)<br />
+        &emsp;&emsp;&emsp;FindTrio(fitnessValues);<br />
       </p>
     </div>
     <div class="resultDivClass">

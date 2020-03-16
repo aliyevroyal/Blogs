@@ -61,11 +61,19 @@
     height: 50vh;
   }
 
-  .InitializationCodeClass {
+  .codeSnippetClass {
+    position: relative;
+    top: 0vh;
+    left: 0vw;
+    width: 100vw;
+    height: auto;
+  }
+
+  .codeSnippetClass p{
     text-align: left;
+    font-size: 1.4vw;
     background-color: #404354;
     color: #EEEDEE;
-    font-size: 1.6vw;
   }
 
   .resultDivClass {
