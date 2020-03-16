@@ -125,6 +125,7 @@
 
   .appendicesDivClass a {
     text-align: left;
+    text-decoration: underline;
     font-size: 1.6vw;
     color: #404354;
   }
