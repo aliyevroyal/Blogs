@@ -1,0 +1,130 @@
+/*........................................................................................................................................................................................*/
+/*Portrait Mode Smartphone Devices*/
+@media (max-width: 575.98px) {
+  .titleDivClass {
+    position: relative;
+    top: 0vh;
+    left: 0vw;
+    width: 100vw;
+    height: auto;
+  }
+
+  .titleDivClass h1 {
+    text-align: center;
+  }
+
+  .introductionDivClass {
+    position: relative;
+    top: 0vh;
+    left: 4.5vw;
+    width: 91vw;
+    height: auto;
+  }
+
+  .introductionDivClass h2 {
+    text-align: center;
+  }
+
+  .introductionDivClass p {
+    text-align: justify;
+    font-size: 4.75vw;
+  }
+
+  .introductionImageClass {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .methodDivClass {
+    position: relative;
+    top: 0vh;
+    left: 4.5vw;
+    width: 91vw;
+    height: auto;
+  }
+
+  .methodDivClass h2 {
+    text-align: center;
+  }
+
+  .methodDivClass p {
+    text-align: justify;
+    font-size: 4.75vw;
+  }
+
+  .resultDivClass {
+    position: relative;
+    top: 0vh;
+    left: 4.5vw;
+    width: 91vw;
+    height: auto;
+  }
+
+  .resultDivClass h2 {
+    text-align: center;
+  }
+
+  .resultDivClass p {
+    text-align: justify;
+    font-size: 4.75vw;
+  }
+
+  .negotiationDivClass {
+    position: relative;
+    top: 0vh;
+    left: 4.5vw;
+    width: 91vw;
+    height: auto;
+  }
+
+  .negotiationDivClass h2 {
+    text-align: center;
+  }
+
+  .negotiationDivClass p {
+    text-align: justify;
+    font-size: 4.75vw;
+  }
+
+  .appendicesDivClass {
+    position: relative;
+    top: 0vh;
+    left: 4.5vw;
+    width: 91vw;
+    height: auto;
+  }
+
+  .appendicesDivClass h2 {
+    text-align: center;
+  }
+
+  .appendicesDivClass p {
+    text-align: left;
+    font-size: 4.75vw;
+  }
+
+  .endingDivClass {
+    position: relative;
+    top: 2.5vh;
+    left: 4.5vw;
+    width: 91vw;
+    height: 10vh;
+  }
+
+  .endingPreviousButtonClass {
+    top: 0vh;
+    left: 1vw;
+    width: 32vw;
+    border-radius: 2.5vh;
+    font-size: 3vh;
+  }
+
+  .endingNextButtonClass {
+    top: 0vh;
+    right: 1vw;
+    width: 32vw;
+    border-radius: 2.5vh;
+    font-size: 3vh;
+  }
+}
