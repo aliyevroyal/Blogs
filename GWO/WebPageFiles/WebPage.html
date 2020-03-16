@@ -31,7 +31,7 @@
     </div>
     <div class="introductionDivClass">
       <p>
-        &emsp; Todays Metaheuristic Optimization Algorithms are used widely from engineering problems to economic estimates.
+        Todays Metaheuristic Optimization Algorithms are used widely from engineering problems to economic estimates.
         Most distinguish side between Optimization Algorithms and classic Machine Learning algorithms is ML has an ability
         to generalize, we design architecture, train/test model(weights) for using it later in order to estimate. But for
         Metaheuristic Optimization things change a little bit. Optimization is a pure algorithm to find some specific point/value
@@ -41,49 +41,49 @@
     </div>
     <div class="methodDivClass">
       <p>
-        &emsp; In this blog we are talking about GWO(Gray Wolf Optimizer) that mimics wolf swarms to explore and
+        In this blog we are talking about GWO(Gray Wolf Optimizer) that mimics wolf swarms to explore and
         exploit prey(in our case prey is point/value).
       </p>
       <iframe class="WolfHuntingTacticsClass" src="https://www.youtube.com/embed/2jXxtQRy47A?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <p>
-        <br />&emsp; We are going to review GWO from programming point by steps below:<br />
-        &emsp; &#8226; Hunting<br />
-        &emsp; &#8226; Exploring<br />
-        &emsp; &#8226; Exploiting<br />
+        <br />We are going to review GWO from programming point by steps below:<br />
+        &#8226; Hunting<br />
+        &#8226; Exploring<br />
+        &#8226; Exploiting<br />
       </p>
       <h2>Hunting(Initialization)</h2>
       <p>
-        &emsp; We initialize the number of population and define alpha, beta, delta(trio) and omega(others) wolves in swarm.
+        We initialize the number of population and define alpha, beta, delta(trio) and omega(others) wolves in swarm.
         More details in the code snippet below.
       </p>
     </div>
     <div class="codeSnippetDivClass">
       <p>
-        &emsp;&emsp;&emsp;//Initialization Starts Here<br />
-        &emsp;&emsp;&emsp;System.out.println("Gray Wolf Initialization Starts...");<br />
-        &emsp;&emsp;&emsp;double a;<br />
-        &emsp;&emsp;&emsp;double r1, r2;<br />
-        &emsp;&emsp;&emsp;double A1, A2, A3;<br />
-        &emsp;&emsp;&emsp;double C1, C2, C3;<br />
-        &emsp;&emsp;&emsp;double Dalpha, Dbeta, Ddelta;<br />
-        &emsp;&emsp;&emsp;double Xalpha, Xbeta, Xdelta;<br />
-        &emsp;&emsp;&emsp;double X, X1, X2, X3;<br />
-        &emsp;&emsp;&emsp;int population = 30, dimension = 100;<br />
-        &emsp;&emsp;&emsp;double min = -100.0, max = 100.0;<br />
-        &emsp;&emsp;&emsp;int iteration = 500;<br /><br />
+        &emsp;&emsp;//Initialization Starts Here<br />
+        &emsp;&emsp;System.out.println("Gray Wolf Initialization Starts...");<br />
+        &emsp;&emsp;double a;<br />
+        &emsp;&emsp;double r1, r2;<br />
+        &emsp;&emsp;double A1, A2, A3;<br />
+        &emsp;&emsp;double C1, C2, C3;<br />
+        &emsp;&emsp;double Dalpha, Dbeta, Ddelta;<br />
+        &emsp;&emsp;double Xalpha, Xbeta, Xdelta;<br />
+        &emsp;&emsp;double X, X1, X2, X3;<br />
+        &emsp;&emsp;int population = 30, dimension = 100;<br />
+        &emsp;&emsp;double min = -100.0, max = 100.0;<br />
+        &emsp;&emsp;int iteration = 500;<br /><br />
 
-        &emsp;&emsp;&emsp;//Create Random population * dimension Optimization Matrix <br />
-        &emsp;&emsp;&emsp;CreateOptimizationMatrix(population, dimension, min, max);<br />
-        &emsp;&emsp;&emsp;//Find Fitness values of population by Sphere Benchmark function<br />
-        &emsp;&emsp;&emsp;FindFitnessValues(optimizationMatrix);<br />
-        &emsp;&emsp;&emsp;//Find 3 best solutions/trio(alpha, beta and delta wolves)<br />
-        &emsp;&emsp;&emsp;FindTrio(fitnessValues);<br />
+        &emsp;&emsp;//Create Random population * dimension Optimization Matrix <br />
+        &emsp;&emsp;CreateOptimizationMatrix(population, dimension, min, max);<br />
+        &emsp;&emsp;//Find Fitness values of population by Sphere Benchmark function<br />
+        &emsp;&emsp;FindFitnessValues(optimizationMatrix);<br />
+        &emsp;&emsp;//Find 3 best solutions/trio(alpha, beta and delta wolves)<br />
+        &emsp;&emsp;FindTrio(fitnessValues);<br />
       </p>
     </div>
     <div class="resultDivClass">
       <h2>Result</h2>
       <p>
-        &emsp; It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed using
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed using
         'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
         their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
       </p>
