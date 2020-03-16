@@ -61,7 +61,7 @@
     height: 50vh;
   }
 
-  .codeSnippetClass {
+  .codeSnippetDivClass {
     position: relative;
     top: 0vh;
     left: 0vw;
@@ -69,7 +69,7 @@
     height: auto;
   }
 
-  .codeSnippetClass p{
+  .codeSnippetDivClass p{
     text-align: left;
     font-size: 1.4vw;
     background-color: #404354;
