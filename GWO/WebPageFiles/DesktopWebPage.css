@@ -53,6 +53,21 @@
     font-size: 1.6vw;
   }
 
+  .WolfHuntingTacticsClass {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: 50vh;
+  }
+
+  .InitializationCodeClass {
+    text-align: left;
+    background-color: #404354;
+    color: #EEEDEE;
+    font-size: 1.6vw;
+  }
+
   .resultDivClass {
     position: relative;
     top: 0vh;

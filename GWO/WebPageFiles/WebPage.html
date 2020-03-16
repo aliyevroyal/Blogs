@@ -10,8 +10,8 @@
   <title>Blog Title</title>
   <meta charset="UTF-8">
   <meta name="author" content="Royal Aliyev">
-  <meta name="description" content="About Blog">
-  <meta name="keywords" content="Keyword1,Keyword2,Keyword3,Keyword4,Keyword5">
+  <meta name="description" content="Gray Wolf Optimizer">
+  <meta name="keywords" content="GWO,Gray Wolf Optimization,Gray Wolf Optimizer,Java">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="WebPage.css" />
@@ -27,31 +27,54 @@
   <!--HTML Supported Devices Mode Code Starts-->
   <div class="hideAllDivClass">
     <div class="titleDivClass">
-      <h1>Title</h1>
+      <h1>Gray Wolf Optimization in Java</h1>
     </div>
     <div class="introductionDivClass">
-      <h2>Introduction</h2>
       <p>
-        &emsp; Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-        specimen
-        book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+        &emsp; Todays Metaheuristic Optimization Algorithms are used widely from engineering problems to economic estimates.
+        Most distinguish side between Optimization Algorithms and classic Machine Learning algorithms is ML has an ability
+        to generalize, we design architecture, train/test model(weights) for using it later in order to estimate. But for
+        Metaheuristic Optimization things change a little bit. Optimization is a pure algorithm to find some specific point/value
+        for each dataset. Below you can see taxonomy of Swarm-based algorithms.
       </p>
-      <img src="Sample.png" class="img-fluid introductionImageClass" alt="Logo Here">
-      <p>
-        recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      </p>
-      <img src="Sample.png" class="img-fluid introductionImageClass" alt="Logo Here">
+      <img src="Swarm-based Optimization Taxonomy.png" class="img-fluid introductionImageClass" alt="Logo Here">
     </div>
     <div class="methodDivClass">
-      <h2>Method</h2>
       <p>
-        &emsp; Where does it come from?
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
-        looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
-        "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
-        comes from a line in section 1.10.32.
-        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by
-        English versions from the 1914 translation by H. Rackham.
+        &emsp; In this blog we are talking about GWO(Gray Wolf Optimizer) that mimics wolf swarms to explore and
+        exploit prey(in our case prey is point/value).
+      </p>
+      <iframe class="WolfHuntingTacticsClass" src="https://www.youtube.com/embed/2jXxtQRy47A?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>
+        <br />&emsp; We are going to review GWO from programming point by steps below:<br />
+        &emsp; &#8226; Hunting<br />
+        &emsp; &#8226; Exploring<br />
+        &emsp; &#8226; Exploiting<br />
+      </p>
+      <h2>Hunting(Initialization)</h2>
+      <p>
+        &emsp; We initialize the number of population and define alpha, beta, delta(trio) and omega(others) wolves in swarm.
+      </p>
+      <p class="InitializationCodeClass">
+        &emsp;//Initialization Starts Here<br/>
+        &emsp;System.out.println("Gray Wolf Initialization Starts...");<br/>
+        &emsp;double a;<br/>
+        &emsp;double r1, r2;<br/>
+        &emsp;double A1, A2, A3;<br/>
+        &emsp;double C1, C2, C3;<br/>
+        &emsp;double Dalpha, Dbeta, Ddelta;<br/>
+        &emsp;double Xalpha, Xbeta, Xdelta;<br/>
+        &emsp;double X, X1, X2, X3;<br/>
+        &emsp;int population = 30, dimension = 100;<br/>
+        &emsp;double min = -100.0, max = 100.0;<br/>
+        &emsp;int iteration = 500;<br/><br/>
+
+        &emsp;//Create Random populationxdimension Optimization Matrix <br/>
+        &emsp;ArrayList<ArrayList<Double>> optimizationMatrix = main.createOptimizationMatrix(population, dimension, min, max);<br/>
+        &emsp;//Find Fitness values of population by Sphere Benchmark function<br/>
+        &emsp;ArrayList<Double> fitnessValues = main.findFitnessValues(optimizationMatrix);<br/>
+        &emsp;//Find 3 best solutions/trio(alpha, beta and delta wolves)<br/>
+        &emsp;ArrayList<Double> trio = main.findTrio(fitnessValues);<br/>
       </p>
     </div>
     <div class="resultDivClass">
@@ -60,16 +83,6 @@
         &emsp; It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed using
         'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
         their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-      </p>
-    </div>
-    <div class="negotiationDivClass">
-      <h2>Negotiation</h2>
-      <p>
-        &emsp; There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a
-        passage of
-        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the
-        Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour,
-        or non-characteristic words etc.
       </p>
     </div>
     <div class="appendicesDivClass">
