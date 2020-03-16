@@ -59,44 +59,84 @@
     </div>
     <div class="codeSnippetDivClass">
       <p>
-        &emsp;&emsp;//Initialization Starts Here<br />
-        &emsp;&emsp;System.out.println("Gray Wolf Initialization Starts...");<br />
-        &emsp;&emsp;double a;<br />
-        &emsp;&emsp;double r1, r2;<br />
-        &emsp;&emsp;double A1, A2, A3;<br />
-        &emsp;&emsp;double C1, C2, C3;<br />
-        &emsp;&emsp;double Dalpha, Dbeta, Ddelta;<br />
-        &emsp;&emsp;double Xalpha, Xbeta, Xdelta;<br />
-        &emsp;&emsp;double X, X1, X2, X3;<br />
-        &emsp;&emsp;int population = 30, dimension = 100;<br />
-        &emsp;&emsp;double min = -100.0, max = 100.0;<br />
-        &emsp;&emsp;int iteration = 500;<br /><br />
+        //Initialization Starts Here<br />
+        System.out.println("Gray Wolf Initialization Starts...");<br />
+        double a;<br />
+        double r1, r2;<br />
+        double A1, A2, A3;<br />
+        double C1, C2, C3;<br />
+        double Dalpha, Dbeta, Ddelta;<br />
+        double Xalpha, Xbeta, Xdelta;<br />
+        double X, X1, X2, X3;<br />
+        int population = 30, dimension = 100;<br />
+        double min = -100.0, max = 100.0;<br />
+        int iteration = 500;<br /><br />
 
-        &emsp;&emsp;//Create Random population * dimension Optimization Matrix <br />
-        &emsp;&emsp;CreateOptimizationMatrix(population, dimension, min, max);<br />
-        &emsp;&emsp;//Find Fitness values of population by Sphere Benchmark function<br />
-        &emsp;&emsp;FindFitnessValues(optimizationMatrix);<br />
-        &emsp;&emsp;//Find 3 best solutions/trio(alpha, beta and delta wolves)<br />
-        &emsp;&emsp;FindTrio(fitnessValues);<br />
+        //Create Random population * dimension Optimization Matrix <br />
+        CreateOptimizationMatrix(population, dimension, min, max);<br />
+        //Find Fitness values of population by Sphere Benchmark function<br />
+        FindFitnessValues(optimizationMatrix);<br />
+        //Find 3 best solutions/trio(alpha, beta and delta wolves)<br />
+        FindTrio(fitnessValues);<br />
+      </p>
+    </div>
+    <div class="methodDivClass">
+      <h2>Exploring and Exploiting</h2>
+      <h2>(Iteration)</h2>
+      <p>
+        In this part of code our wolves explore and when they find prey by iterating. In each iteration we define alpha,
+        beta and delta wolves of swarm by Sphere Benchmark function. At the end of each iteration we change position of
+        other wolves(omega) due to trio.
+      </p>
+    </div>
+    <div class="codeSnippetDivClass">
+      <p>
+        //Iteration Starts Here<br />
+        System.out.println("Gray Wolf Iteration Starts...");<br />
+        for (int stCounter = 0; stCounter
+        < iteration; stCounter=stCounter + 1) {<br />
+        &emsp;&emsp;for (int ndCounter = 0; ndCounter
+        < optimizationMatrix.size(); ndCounter=ndCounter + 1) {<br />
+        &emsp;&emsp;&emsp;&emsp;for (int rdCounter = 0; rdCounter
+        < optimizationMatrix.get(ndCounter).size(); rdCounter=rdCounter + 1) {<br />
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;//Update the position of each wolf in dimension<br />
+        &emsp;&emsp;&emsp;&emsp;}<br />
+        &emsp;&emsp;}<br />
+        //Find Fitness values of population by Sphere Benchmark function<br />
+        FindFitnessValues(optimizationMatrix);<br />
+        //Find 3 best solutions/trio(alpha, beta and delta wolves)<br />
+        FindTrio(fitnessValues);<br />
+        }<br />
       </p>
     </div>
     <div class="resultDivClass">
       <h2>Result</h2>
       <p>
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed using
-        'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in
-        their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        At the end of iterations we find the best positions of wolf population. But alpha wolf's position is where our wolves
+        exploited prey. In the classic GWO our results after 500 iteration should be like for 30 population and 100 dimensions:
+      </p>
+    </div>
+    <div class="codeSnippetDivClass">
+      <p>
+        Alpha's Fitness Value at the End:<br /> 5.0912633467929775E-15<br />
+        Alpha's Values at the End:<br /> [8.133101711319844E-9, 6.235615799574227E-9, 7.839096104261306E-9, 8.504619117130029E-9, 6.425843414789091E-9, -6.768752804656183E-9, -5.520651393403654E-9, -8.312186750183637E-9, -5.951657081578676E-9,
+        -6.0293785776069615E-9, -6.081373029732927E-9, -5.571034644488727E-9, -1.2551939520570615E-8, 9.812182887808929E-9, 7.895511973256799E-9, -5.122038586478608E-9, -6.8690955714520425E-9, -3.517511670206184E-10, -1.0772001444146408E-8,
+        -7.961244896612664E-9, 6.296284341906569E-9, -4.564474657298178E-9, -1.1182790902630344E-8, -7.97213270149004E-9, 4.286787598109508E-9, 1.044554730886351E-8, 3.8605811365239964E-9, 6.465074098547522E-9, -9.809261082036713E-9,
+        4.905681874162253E-9, 5.360139008272971E-9, -5.495620438257478E-9, 5.782651920516779E-9, 8.775403974858747E-9, -9.847979898469498E-12, 9.939205810822656E-9, 9.467627168559898E-9, 6.106652268527724E-9, -6.867483102021283E-9,
+        5.921483895486395E-9, -3.151513256393593E-10, 6.8609105241423115E-9, -5.129126871035764E-9, -9.306651537916902E-9, -3.8424096156067885E-9, -8.578074165682526E-9, 8.21130035285022E-9, -6.9497429779216166E-9, -7.759865513748853E-9,
+        -9.900701543898084E-9, 9.52457987280149E-9, 6.7309780749570206E-9, 5.3036695951999855E-9, 1.0406718924323178E-8, -7.121079512474144E-9, 4.039575896822895E-11, 6.538925842268621E-9, 4.964656602441675E-9, -7.330566391709826E-10,
+        6.138960563761243E-9, 7.281616520328918E-9, 2.29536615496316E-9, -9.760527704934955E-9, -6.659616695108597E-9, 8.780270326856523E-9, 5.162384773670397E-9, -3.922867949633621E-9, -7.27510975756554E-9, -8.091041042773494E-9,
+        -4.264434973692745E-9, 6.443218972234333E-9, -1.0033174030746726E-8, -7.169199060527651E-9, -7.3697931277760916E-9, 7.36419348805757E-9, -4.125307038891776E-9, -8.094319970726185E-9, -6.037405849396805E-9, -7.608212927506544E-9,
+        9.478540931398007E-9, -4.610235685509656E-9, -8.120340369560147E-9, 5.285255586188076E-9, 7.560456438668054E-9, -4.446851741939845E-9, 8.801461233922141E-9, 5.762279797694802E-9, 7.294369089721879E-9, -6.735638282487944E-9,
+        7.673856654743114E-9, -7.593287913488693E-9, 9.917078126839121E-9, -8.198665162276074E-9, -6.487670230844281E-9, -6.136380932516314E-9, -6.815169566104333E-9, -8.922608438935424E-11, -5.205378553826507E-9, -6.4325045393836485E-9,
+        8.615086355873945E-9]
       </p>
     </div>
     <div class="appendicesDivClass">
       <h2>Appendices</h2>
-      <p>
-        URL link
-      </p>
+      <a href="https://www.w3schools.com/html/" target="_blank">Source code in Java programming language</a>
     </div>
     <div class="endingDivClass">
-      <button class="endingPreviousButtonClass">Previous</button>
-      <button class="endingNextButtonClass">Next</button>
     </div>
     <!--........................................................................................................................................................................................-->
     <!--HTML Body Desktop JavaScript Files Starts-->

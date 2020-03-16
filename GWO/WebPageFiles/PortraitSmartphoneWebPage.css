@@ -72,6 +72,7 @@
   .codeSnippetDivClass p {
     text-align: left;
     font-size: 3.2vw;
+    padding-left: 5vw;
     background-color: #404354;
     color: #EEEDEE;
   }
@@ -122,9 +123,10 @@
     text-align: center;
   }
 
-  .appendicesDivClass p {
+  .appendicesDivClass a {
     text-align: left;
     font-size: 4.75vw;
+    color: #404354;
   }
 
   .endingDivClass {
