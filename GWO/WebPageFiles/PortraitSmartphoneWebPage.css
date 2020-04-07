@@ -27,7 +27,7 @@
 
   .introductionDivClass p {
     text-align: justify;
-    font-size: 4.75vw;
+    font-size: 2.5vh;
   }
 
   .introductionImageClass {
@@ -50,7 +50,7 @@
 
   .methodDivClass p {
     text-align: justify;
-    font-size: 4.75vw;
+    font-size: 2.5vh;
   }
 
   .WolfHuntingTacticsClass {
@@ -71,7 +71,7 @@
 
   .codeSnippetDivClass p {
     text-align: left;
-    font-size: 3.2vw;
+    font-size: 2vh;
     padding-left: 5vw;
     background-color: #404354;
     color: #EEEDEE;
@@ -91,7 +91,7 @@
 
   .resultDivClass p {
     text-align: justify;
-    font-size: 4.75vw;
+    font-size: 2.5vh;
   }
 
   .negotiationDivClass {
@@ -108,7 +108,7 @@
 
   .negotiationDivClass p {
     text-align: justify;
-    font-size: 4.75vw;
+    font-size: 2.5vh;
   }
 
   .appendicesDivClass {
@@ -126,7 +126,7 @@
   .appendicesDivClass a {
     text-align: left;
     text-decoration: underline;
-    font-size: 4.75vw;
+    font-size: 2.5vh;
     color: #404354;
   }
 
@@ -143,7 +143,7 @@
     left: 1vw;
     width: 32vw;
     border-radius: 2.5vh;
-    font-size: 3vh;
+    font-size: 2.5vh;
   }
 
   .endingNextButtonClass {
@@ -151,6 +151,6 @@
     right: 1vw;
     width: 32vw;
     border-radius: 2.5vh;
-    font-size: 3vh;
+    font-size: 2.5vh;
   }
 }
