@@ -1,0 +1,87 @@
+<!--........................................................................................................................................................................................-->
+<!--HTML Code Starts-->
+<html lang="en">
+<!--........................................................................................................................................................................................-->
+<!--HTML Head Code Starts-->
+<!--........................................................................................................................................................................................-->
+<!--HTML Head Code Starts-->
+
+<head>
+  <title>Reinforcement Learning</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Royal Aliyev">
+  <meta name="description" content="About Blog">
+  <meta name="keywords" content="Reinforcement Learning,Q Values Learning,Machine Learning,Java,Framework">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="WebPage.css" />
+  <link rel="stylesheet" type="text/css" href="PortraitSmartphoneWebPage.css" />
+  <link rel="stylesheet" type="text/css" href="UnsupportedDevicesWebPage.css" />
+  <link rel="stylesheet" type="text/css" href="DesktopWebPage.css" />
+</head>
+<!--........................................................................................................................................................................................-->
+<!--HTML Body Code Starts-->
+
+<body>
+  <!--........................................................................................................................................................................................-->
+  <!--HTML Supported Devices Mode Code Starts-->
+  <div class="hideAllDivClass">
+    <div class="titleDivClass">
+      <h1>Reinforcement Learning</h1>
+    </div>
+    <div class="introductionDivClass">
+      <h2>Q Learning</h2>
+      <p>
+        &emsp; Today one of the most hot topic in both science and engineering is Artificial Intelligence (AI). But combination of these two words is very comprehensive litteraly. It is very easy to get confused by terms are used in the modern
+        technology. So Machine Learning (ML) is mostly considered while people are talking about AI. But Machine Learning is just subset of modern Artificial Intelligence that let computers learn and act without any help from humans. There are even
+        subsets of Machine Learning algorithms. And all these subset algorithms provide computers with various ways of learning methods to solve various type of engineering problems. Below, in the figure you can see well known taxonomy of ML:
+      </p>
+      <img src="MLTaxonomy.png" class="img-fluid introductionImageClass" alt="Logo Here">
+      <p>
+        &emsp; As mentioned before all these categorized algorithms are designed to look at the problems from different point of views and solve them. But in this blog I will talk about Q Learning is just categorized just under RL. This blog will
+        help for beginners to create basic imagination about this algorithm and I will share my framework written in Java.
+      </p>
+      <p>
+        &emsp; Q Learning first was developed by Chris Watkins in 1989 and proved by again Watkins and Dayan in 1992. Two most common versions of algorithm are avialable as well; Deep Q Learning and Double Q Learning.
+      </p>
+    </div>
+    <div class="methodDivClass">
+      <p>
+        &emsp; There are three components Q learning needs to work that has been shown in the figure below:
+      </p>
+      <img src="RewardTable.png" class="img-fluid introductionImageClass" alt="Logo Here"></br>
+      <img src="QValuesTable.png" class="img-fluid introductionImageClass" alt="Logo Here"></br>
+      <img src="BellmanEquation.png" class="img-fluid introductionImageClass" alt="Logo Here"></br>
+      <p>
+        &emsp; These three components are called Reward table, Q Values table and Bellman equation (named after Richard E. Bellman) relatively. Reward table can be provided by us or created programmatically due to the problem itself. WIth this table
+        matrix we can reward or penalize our agent for its actions. We can think of Q Values table matrix as experience of agent. In the beginning it does not know anything at all about environments so all elements of Q Values table are equal to
+        zero. As out agent discover the environment and gets experiences it learns from environment and update Q Values table. And each experience can be calculated with Bellman equation mathematically.
+      </p>
+      <p>
+        &emsp; In the end of the Learning session (just after iterations in other words) our agent’s experience (Q Values table) can be saved for later use. As mentioned before source code this algorithm can be found at the Appendices section. This
+        source code can be used as a framework. And as a example demo code has been created to show how developers can implement this algoriyhm to their applications.
+      </p>
+    </div>
+    <div class="appendicesDivClass">
+      <h2>Appendices</h2>
+      <a href="https://github.com/aliyevroyal/ReinforcementLearning" target="_blank">&#8226; Source code</a>
+    </div>
+    <!--........................................................................................................................................................................................-->
+    <!--HTML Body Desktop JavaScript Files Starts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="ajax.js" type="text/javascript"></script>
+    <script src="WebPage.js" type="text/javascript"></script>
+  </div>
+  <!--........................................................................................................................................................................................-->
+  <!--HTML Unsupported Devices Mode Code Starts-->
+  <div class="rotateDeviceDivClass">
+    <div class="phoneDivClass"></div>
+    <div align="center">
+      <p class="rotatePClass">Please rotate your device!</p>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+/*........................................................................................................................................................................................*/
+/*Portrait Mode Smartphone Devices*/
+@media (max-width: 575.98px) {
+  .titleDivClass {
+    position: relative;
+    top: 0vh;
+    left: 0vw;
+    width: 100vw;
+    height: auto;
+  }
+
+  .titleDivClass h1 {
+    text-align: center;
+  }
+
+  .introductionDivClass {
+    position: relative;
+    top: 0vh;
+    left: 4.5vw;
+    width: 91vw;
+    height: auto;
+  }
+
+  .introductionDivClass h2 {
+    text-align: center;
+  }
+
+  .introductionDivClass p {
+    text-align: justify;
+    font-size: 2.5vh;
+  }
+
+  .introductionImageClass {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .methodDivClass {
+    position: relative;
+    top: 0vh;
+    left: 4.5vw;
+    width: 91vw;
+    height: auto;
+  }
+
+  .methodDivClass h2 {
+    text-align: center;
+  }
+
+  .methodDivClass p {
+    text-align: justify;
+    font-size: 2.5vh;
+  }
+
+  .WolfHuntingTacticsClass {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    height: 30vh;
+  }
+
+  .codeSnippetDivClass {
+    position: relative;
+    top: 0vh;
+    left: 0vw;
+    width: 100vw;
+    height: auto;
+  }
+
+  .codeSnippetDivClass p {
+    text-align: left;
+    font-size: 2vh;
+    padding-left: 5vw;
+    background-color: #404354;
+    color: #EEEDEE;
+  }
+
+  .resultDivClass {
+    position: relative;
+    top: 0vh;
+    left: 4.5vw;
+    width: 91vw;
+    height: auto;
+  }
+
+  .resultDivClass h2 {
+    text-align: center;
+  }
+
+  .resultDivClass p {
+    text-align: justify;
+    font-size: 2.5vh;
+  }
+
+  .negotiationDivClass {
+    position: relative;
+    top: 0vh;
+    left: 4.5vw;
+    width: 91vw;
+    height: auto;
+  }
+
+  .negotiationDivClass h2 {
+    text-align: center;
+  }
+
+  .negotiationDivClass p {
+    text-align: justify;
+    font-size: 2.5vh;
+  }
+
+  .appendicesDivClass {
+    position: relative;
+    top: 0vh;
+    left: 4.5vw;
+    width: 91vw;
+    height: auto;
+  }
+
+  .appendicesDivClass h2 {
+    text-align: center;
+  }
+
+  .appendicesDivClass a {
+    text-align: left;
+    text-decoration: underline;
+    font-size: 2.5vh;
+    color: #404354;
+  }
+
+  .endingDivClass {
+    position: relative;
+    top: 2.5vh;
+    left: 4.5vw;
+    width: 91vw;
+    height: 10vh;
+  }
+
+  .endingPreviousButtonClass {
+    top: 0vh;
+    left: 1vw;
+    width: 32vw;
+    border-radius: 2.5vh;
+    font-size: 2.5vh;
+  }
+
+  .endingNextButtonClass {
+    top: 0vh;
+    right: 1vw;
+    width: 32vw;
+    border-radius: 2.5vh;
+    font-size: 2.5vh;
+  }
+}
