@@ -135,20 +135,4 @@
     width: 91vw;
     height: 10vh;
   }
-
-  .endingPreviousButtonClass {
-    top: 0vh;
-    left: 1vw;
-    width: 32vw;
-    border-radius: 2.5vh;
-    font-size: 2.5vh;
-  }
-
-  .endingNextButtonClass {
-    top: 0vh;
-    right: 1vw;
-    width: 32vw;
-    border-radius: 2.5vh;
-    font-size: 2.5vh;
-  }
 }

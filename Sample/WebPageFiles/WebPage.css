@@ -41,21 +41,3 @@ body {
 .rotateDeviceDivClass {
   display: none;
 }
-
-.endingPreviousButtonClass {
-  position: absolute;
-  width: 0vw;
-  background-color: #404354;
-  color: #EEEDEE;
-  cursor: pointer;
-  border: 0;
-}
-
-.endingNextButtonClass {
-  position: absolute;
-  width: 0vw;
-  background-color: #404354;
-  color: #EEEDEE;
-  cursor: pointer;
-  border: 0;
-}
